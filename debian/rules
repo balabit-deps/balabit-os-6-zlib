@@ -185,8 +185,7 @@ install: build
 
 	$(MAKE) prefix=$(CURDIR)/debian/tmp/usr install
 
-	install -d debian/tmp/lib/$(DEB_HOST_MULTIARCH) debian/tmp/usr/include/$(DEB_HOST_MULTIARCH)
-	mv debian/tmp/usr/include/zconf.h debian/tmp/usr/include/$(DEB_HOST_MULTIARCH)/
+	install -d debian/tmp/lib/$(DEB_HOST_MULTIARCH)
 	mv debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/libz.so.* debian/tmp/lib/$(DEB_HOST_MULTIARCH)
 	ln -sf /lib/$(DEB_HOST_MULTIARCH)/$$(readlink debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/libz.so) debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/libz.so
 

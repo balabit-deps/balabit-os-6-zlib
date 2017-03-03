@@ -1,3 +1,11 @@
+zlib (1:1.2.8.dfsg-2ubuntu4.1) xenial-proposed; urgency=medium
+
+  * SRU
+  * Move zconf.h back to /usr/include (not differing across architectures)
+    anymore. Closes: #787956. LP: #1512992.
+
+ -- Matthias Klose <doko@ubuntu.com>  Fri, 03 Mar 2017 18:31:53 +0100
+
 zlib (1:1.2.8.dfsg-2ubuntu4) wily; urgency=medium
 
   * Call dh_makeshlibs for the 64bit multilib package.
